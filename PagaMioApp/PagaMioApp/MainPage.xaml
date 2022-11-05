@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PagaMioApp.MainPage">
+    
+
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center" WidthRequest="400"  >
+        <Frame BackgroundColor="Navy" 
+                   CornerRadius="50">
+            <Label Text="PagaMioApp" 
+                       HorizontalTextAlignment="Center "
+                       TextColor="White"
+                       FontSize="Large"/>
+            
+        </Frame>
+        <Image
+                    Source="descarga2"
+                    WidthRequest="200">
+        </Image>
+        <Label Text=" "/>
+        <Label Text=" "/>
+        <Label Text=" "/>
+        <Label Text=" "/>
+        <Label Text=" "/>
+        <Label Text=" "/>
+        
+        <Entry Placeholder="Email" Text="{Binding Email}" />
+        <Entry Placeholder="Password" Text="{Binding Password}" />
+        <Button Text="Log In"  CornerRadius="50" TextColor="White" BackgroundColor="Black" Command="{Binding LoginCommand}" />
+        <Button Text="Register" CornerRadius="50" TextColor="White" BackgroundColor="Black" Command="{Binding RegisterCommand}" />
+        <Label Text=" Olvido su E mail o Password?"
+               x:Name="IMC" IsEnabled="False" TextColor="Yellow"/>
+        <Label Text=" "/>
+        <Label Text=" "/>
+        <Label Text=" "/>
+        
+
+        
+       
+
+        <Label Text="By LYL SERIE.COM" 
+                       HorizontalTextAlignment="End"
+                       TextColor="RED"
+                       FontSize="Small"/>
+
+    </StackLayout>
+
+</ContentPage>
+
